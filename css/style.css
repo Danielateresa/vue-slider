@@ -50,12 +50,13 @@
     object-fit: cover;
 }
 
-.thumb.active {
+.active {
     border: 2px solid #ccc;
     opacity: 1;
 }
 
-.prev, .next {
+.prev,
+.next {
     width: 20px;
     height: 20px;
     margin: 10px 0;

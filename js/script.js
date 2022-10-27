@@ -70,11 +70,17 @@ createApp({
         },
         nextImg() {
             console.log('ho cliccato su next');
+
             this.activeSlide++;
+            //console.log(this.activeSlide);
             if (this.activeSlide === slides.length) {
                 this.activeSlide = 0;
             }
+
             //console.log(slides.length);
+        },
+        nextThumb(i) {
+            this.activeSlide = i;
         }
     }
 
