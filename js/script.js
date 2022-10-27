@@ -58,5 +58,17 @@ createApp({
                 }
             ]
         }
+
+    },
+    methods: {
+        prevImg() {
+            console.log('ho cliccato su prev');
+            this.activeSlide--;
+        },
+        nextImg() {
+            console.log('ho cliccato su next');
+            this.activeSlide++;
+        }
     }
+
 }).mount('#app');
