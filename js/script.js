@@ -64,10 +64,17 @@ createApp({
         prevImg() {
             console.log('ho cliccato su prev');
             this.activeSlide--;
+            if (this.activeSlide < 0) {
+                this.activeSlide = slides.length - 1;
+            }
         },
         nextImg() {
             console.log('ho cliccato su next');
             this.activeSlide++;
+            if (this.activeSlide === slides.length) {
+                this.activeSlide = 0;
+            }
+            //console.log(slides.length);
         }
     }
 
